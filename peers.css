@@ -1,0 +1,435 @@
+body {
+    background-color: black;
+  }
+
+  .movinglink {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+
+}
+div.movinglink a {
+    display: inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.movinglink a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+  }
+  
+  div.movinglink a:hover {
+    background-color: red;
+  }
+
+
+  .movinglink2 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  div.movinglink2 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink2 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink2 a:hover {
+  background-color: red;
+  }
+  
+
+
+  .movinglink3 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  div.movinglink3 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink3 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink3 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink4 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink4 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink4 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink4 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink5 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink5 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink5 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink5 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink6 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink6 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink6 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink6 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink7 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink7 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink7 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink7 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink8 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink8 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink8 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink8 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink9 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink9 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink9 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink9 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink10 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink10 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink10 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink10 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink11 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink11 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink11 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink11 a:hover {
+  background-color: red;
+  }
+  
+  .movinglink12 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink12 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink12 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink12 a:hover {
+  background-color: red;
+  }
+
+  .movinglink13 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink13 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink13 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink13 a:hover {
+  background-color: red;
+  }
+
+  .movinglink14 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink14 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink14 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink14 a:hover {
+  background-color: red;
+  }
+
+  .movinglink15 {
+    font-size: 20px;
+    font-family:  Helvetica;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  
+  div.movinglink15 a {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  }
+  
+  div.movinglink15 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  }
+  
+  div.movinglink15 a:hover {
+  background-color: red;
+  }
