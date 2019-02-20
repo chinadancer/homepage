@@ -1,0 +1,312 @@
+body{
+    background: black;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto_Condensed/RobotoCondensed-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+.emptybox{
+    width:100px;
+    height: 200px;
+}
+
+.title {
+    overflow: hidden; 
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .10em; 
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-iteration-count: infinite;
+      
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+.emptybox2{
+    width:100px;
+    height: 800px;
+}
+
+.sally1{
+    position: absolute;
+    right: 200px;
+}
+
+.emptybox3{
+    width:100px;
+    height: 500px;
+}
+
+.sally2{
+    position: absolute;
+    right: 200px;
+}
+
+.emptybox4{
+    width:100px;
+    height: 800px;
+}
+
+.me1{
+    position: absolute;
+    left: 275px;
+}
+
+.emptybox5{
+    width:100px;
+    height: 600px;
+}
+
+.me2{
+    position: absolute;
+    left: 300px;
+}
+
+.emptybox6{
+    width:100px;
+    height: 600px;
+}
+
+.me3{
+    position: absolute;
+    left: 300px;
+}
+
+.emptybox7{
+    width:100px;
+    height: 600px;
+}
+
+.me4{
+    position: absolute;
+    left: 300px;
+}
+
+.emptybox8{
+    width:100px;
+    height: 500px;
+}
+
+.sally3{
+    position: absolute;
+    right: 200px;
+}
+
+.emptybox9{
+    width:100px;
+    height: 800px;
+}
+
+.sally4{
+    position: absolute;
+    right: 200px;
+}
+
+.emptybox10{
+    width:100px;
+    height: 800px;
+}
+
+.me5{
+    position: absolute;
+    left: 300px;
+}
+
+.emptybox11{
+    width:100px;
+    height: 600px;
+}
+
+.me6{
+    position: absolute;
+    left: 300px;
+}
+
+.emptybox12{
+    width:100px;
+    height: 600px;
+}
+
+.me7{
+    position: absolute;
+    left: 300px;
+}
+
+.emptybox13{
+    width:100px;
+    height: 3000px;
+}
+
+.sally5{
+    position: absolute;
+    left: 0px;
+}
+
+.emptybox14{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox15{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox16{
+    width:100px;
+    height: 500px;
+}
+.emptybox17{
+    width:100px;
+    height: 500px;
+}
+.emptybox18{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox19{
+    width:100px;
+    height: 500px;
+}
+
+.sally6{
+    position: absolute;
+    left: 0px;
+}
+
+.emptybox20{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox21{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox22{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox23{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox24{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox25{
+    width:100px;
+    height: 500px;
+}
+
+.emptybox26{
+    width:100px;
+    height: 500px;
+}
+
+.sally7{
+    position: absolute;
+    left: 0px;
+}
+
+.emptybox27{
+    width:100px;
+    height: 500px;
+}
+
+.me8{
+    position: absolute;
+    left: 200px;
+}
+
+.emptybox28{
+    width:100px;
+    height: 3000px;
+}
+
+.sally8{
+    position: absolute;
+    left: 400px;
+}
+
+.emptybox29{
+    width:100px;
+    height: 500px;
+}
+
+.sally9{
+    position: absolute;
+    left: 400px;
+}
+
+.emptybox30{
+    width:100px;
+    height: 500px;
+}
+
+.me9{
+    position: absolute;
+    right: 100px;
+}
+
+.emptybox31{
+    width:100px;
+    height: 500px;
+}
+
+.sally10{
+    position: absolute;
+    left: 400px;
+}
+
+.emptybox32{
+    width:100px;
+    height: 500px;
+}
+
+.me10{
+    position: absolute;
+    right: 100px;
+}
+
+.emptybox33{
+    width:100px;
+    height: 600px;
+}
+
+.sally11{
+    position: absolute;
+    left: 400px;
+}
+
+.emptybox34{
+    width:100px;
+    height: 500px;
+}
+
+.sally12{
+    position: absolute;
+    left: 400px;
+}

@@ -1,0 +1,288 @@
+body {
+    background-color: cadetblue;
+  }
+  
+  
+  div.box{
+      background-color: lightgrey;
+    width: 300px;
+    border: 25px solid red;
+    padding: 25px;
+    margin: 25px;
+  }
+  
+  div.shit{
+      position: fixed;
+      top: 400px;
+      left: 200px;
+  }
+  
+  div.box2{
+      background-color: cyan;
+      border: 10px solid darkblue;
+      width: 5px;
+      height: 400px;
+    padding: 5px;
+      margin: 10px;
+      z-index: 1;
+      float: left;
+  }
+  
+  div.shit2{
+      position: fixed;
+      top: 250px;
+      left: 50px;
+  }	
+  
+  
+  div.box3 {
+      width: 5px;
+      height: 1px;	
+  border:280px;
+  padding:10px;
+  margin:2px;
+  background-color: orange;
+  float: right;
+      
+  }
+  
+  div.shit3{
+      position: fixed;
+      top: 650px;
+      left: 200px;
+  }	
+  
+  div.box4 {
+      width: 40px;
+      height: 100px;	
+  border:280px;
+  padding:20px;
+  margin:10px;
+  background-color: black;
+  float: right;
+      
+  }
+  
+  div.shit4{
+      position: fixed;
+      top: 350px;
+      left: 600px;
+  }	
+  
+  
+  div.box5 {
+      width: 400px;
+      height: 100px;	
+  border:280px;
+  padding:40px;
+  margin:10px;
+  background-color: black;
+  float: right;
+      
+  }
+      
+  div.shit5{
+      position: fixed;
+      bottom: 10px;
+      right: 100px;
+  }
+  
+  div.box6{
+      background-color: lightgrey;
+      width: 3px;
+      height: 400px;
+    border: 5px solid red;
+    padding: 10px;
+      margin: 1px;
+      float: left;
+  }
+  
+  div.shit6{
+      position: fixed;
+      top: 600px;
+      right: 50px;
+  }	
+  
+  
+  div.box7 {
+      width: 5px;
+      height: 1px;	
+  border:280px;
+  padding:10px;
+  margin:2px;
+  background-color: greenyellow;
+  float: left;
+      
+  }
+  
+  div.shit7{
+      position: fixed;
+      top: 50px;
+      right: 200px;
+  }	
+  
+  
+  div.box8 {
+      width: 40px;
+      height: 100px;	
+  border:280px;
+  padding:20px;
+  margin:10px;
+  background-color: darkblue;
+  float: right;
+
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+      
+  }
+
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      
+    }
+    50% {
+      transform: scale (.9)
+    }
+    100% {
+      transform: scale(1.5);
+      
+    }
+  }
+
+
+
+@keyframes moving{
+    0%{
+        transform: translate(-300px,0);
+    }
+    100%{
+        transform: translate(100vw, 0);
+    }
+}
+
+@keyframes walk{
+    0%{
+        transform: rotate(-4deg);
+    }
+
+    50%{
+        transform: rotate(4deg);
+    }
+
+    100%{
+        transform: rotate(-4deg);
+    }
+}
+
+@keyframes walk2{
+    0%{
+        transform: rotate(4deg);
+    }
+
+    50%{
+        transform: rotate(-4deg);
+    }
+
+    100%{
+        transform: rotate(4deg);
+    }
+}
+
+@keyframes timeofday{
+    0%{
+        background-color: black;
+    }
+
+    10%{
+        background-color: blue;
+    }
+
+    40%{
+        background-color: lightskyblue;
+    }
+
+    60%{
+        background-color: lightcoral;
+    }
+
+    80%{
+        background-color: darkblue;
+    }
+
+    100%{
+        background-color: black;
+    }
+}
+
+body{
+    background-color: lightcyan;
+    animation-name: timeofday;
+    animation-iteration-count:infinite;
+    animation-duration: 20s;
+   }
+   
+#wrapper{
+    position: relative;
+    height: 400px;
+    width: 100px;
+    animation-name: moving;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count:infinite; 
+}
+
+#head{
+    width: 100px;
+    height: 100px;
+    background-color: firebrick;
+    border-radius: 50px;
+}
+
+#body{
+    width: 100px;
+    height: 150px;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.legs{
+    position: relative;
+    width: 50px;
+    height: 150px;
+    background-color: blue;
+    display: inline-block;
+
+}
+
+#leg1{
+    animation-name: walk2;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+#leg2{
+    background-color: midnightblue;
+    animation-name: walk;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+.foot{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    width: 50px;
+    height: 30px;
+}

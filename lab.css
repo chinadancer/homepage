@@ -1,0 +1,54 @@
+body{
+    background-color: #0E1C36;
+}
+
+.emptybox{
+    border: 1px solid #0E1C36 ;
+    background-color: #0E1C36;
+    padding: 50px;
+    width: 400px;
+    height: 200px; 
+}
+
+.emptybox2{
+    border: 1px solid #0E1C36 ;
+    background-color: #0E1C36;
+    padding: 50px;
+    width: 400px;
+    height: 350px; 
+}
+.emptybox3{
+    border: 1px solid #0E1C36 ;
+    background-color: #0E1C36;
+    padding: 50px;
+    width: 400px;
+    height: 100px; 
+}
+
+@font-face{
+    font-family: Bangers;
+    src: url(Bangers/Bangers-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+
+div{
+    color: #A5D9F7;
+    opacity: 70%;
+    font-size: 80px;
+    text-align: center;
+    font-family: Bangers;
+    font-weight: 100;
+
+}
+
+img{
+    
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+    
+}

@@ -1,0 +1,103 @@
+body{
+    background: black;
+}
+
+@font-face{
+    font-family: Oswald;
+    src: url(Oswald/Oswald-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+.top{
+    font-family: Oswald;
+    font-size: 350px;
+    text-align: center;
+    color: #4392F1;
+}
+
+.emptybox{
+    width:100px;
+    height: 200px;
+}
+
+.emptybox2{
+    width:100px;
+    height: 800px;
+}
+
+.sally1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #4392F1;
+}
+
+.me1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.sally2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #4392F1;
+}
+
+.me2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.emptybox3{
+    width:100px;
+    height: 800px;
+}
+
+.sally3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #4392F1;
+}
+
+.me3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.emptybox4{
+    width:100px;
+    height: 800px;
+}
+
+.sally4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #4392F1;
+}
+
+.me4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.sally5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #4392F1;
+}
+
+.me5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.sally6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #4392F1;
+}
