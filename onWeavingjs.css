@@ -1,0 +1,174 @@
+#box1{
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    float: left;
+}
+#box2{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    float: left;
+}
+#box3{
+    height: 200px;
+    width: 100px;
+    background-color: darkred;
+    float: left;
+}
+#box4{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    float: left;
+}
+#box5{
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    float: left;
+}
+#box6{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    float: left;
+    position: absolute;
+    left: 8px;
+    top: 200px;
+}
+#box7{
+    height: 200px;
+    width: 100px;
+    background-color: darkred;
+    float: left;
+    position: absolute;
+    left: 108px;
+    top: 200px;
+}
+#box8{
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left: 208px;
+    top: 200px;
+}
+#box9{
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    float: left;
+    position: absolute;
+    left: 308px;
+    top: 200px;
+}
+#box10{
+    height: 200px;
+    width: 100px;
+    background-color:red;
+    float: left;
+    position: absolute;
+    left: 408px;
+    top: 200px;
+}
+#box11{
+    height: 200px;
+    width: 100px;
+    background-color: darkred;
+    float: left;
+    position: absolute;
+    left: 8px;
+    top: 400px;
+}
+#box12{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    float: left;
+    position: absolute;
+    left: 108px;
+    top: 400px;
+}
+#box13{
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    float: left;
+    position: absolute;
+    left: 208px;
+    top: 400px;
+}
+#box14{
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left: 308px;
+    top: 400px;
+}
+#box15{
+    height: 200px;
+    width: 100px;
+    background-color: darkred;
+    float: left;
+    position: absolute;
+    left: 408px;
+    top: 400px;
+}
+#box16{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    float: left;
+    position: absolute;
+    left: 8px;
+    top: 600px;
+}
+#box17{
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    float: left;
+    position: absolute;
+    left: 108px;
+    top: 600px;
+}
+#box18{
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left: 208px;
+    top: 600px;
+}
+#box19{
+    height: 200px;
+    width: 100px;
+    background-color: darkred;
+    float: left;
+    position: absolute;
+    left: 308px;
+    top: 600px;
+}
+#box20{
+    height: 200px;
+    width: 100px;
+    background-color: red;
+    float: left;
+    position: absolute;
+    left: 408px;
+    top: 600px;
+}
+
+p{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 525px;
+    top: 400px;
+}
