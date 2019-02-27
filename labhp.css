@@ -85,3 +85,18 @@ body{
     left: 5000px;
     top: 300px;
 }
+
+.page5{
+    position: absolute;
+    left: 6000px;
+    top: 375px; 
+}
+
+.title7{
+    font-family: bebas;
+    color: #843B62;
+    font-size: 30px;
+    position: absolute;
+    left: 6000px;
+    top: 300px;
+}
