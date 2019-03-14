@@ -25,6 +25,13 @@ body{
     text-decoration: none;
 }
 
+.projects3{
+    position: absolute;
+    top: 700px;
+    right: 290px; 
+    text-decoration: none;
+}
+
 a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
