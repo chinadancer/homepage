@@ -35,6 +35,12 @@ body{
     animation-iteration-count: infinite;
 }
 
+.empty{
+    padding: 50px;
+    width: 400px;
+    height: 300px; 
+}
+
 @keyframes example {
   0%   {background-color: white; font-family: Arial, Helvetica, sans-serif;}
   10%  {background-color: #090446; font-family: Arial, Helvetica, sans-serif;}
@@ -77,14 +83,30 @@ body{
   100% {color: #F28123; font-family: Arial, Helvetica, sans-serif;}
 }
 
+@media only screen and (max-width: 768px) {
+    .name{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 300px;
+    line-height: 4.5;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    animation-name: fontexample;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+}
+
+
 </style>
 
 </head>
 <body>
 
-
-        <marquee scrollamount="10"> <div class="line">
-            <br><br><br><br>
+    <div class="empty"></div>
+    <marquee scrollamount="10"> <div class="line">
                 Parsons Communication Design Lectures &nbsp;&nbsp;&nbsp;&nbsp; When: Feb 12th, 5pm &nbsp;&nbsp;&nbsp;&nbsp; Where: Design Lab, 2W 13th St. 10th floor
             </div> </marquee>
 
