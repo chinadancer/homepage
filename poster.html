@@ -2,12 +2,11 @@
 <html>
 <head>
 <title> Neil Donnelly </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
 body{
     background-color: white; 
-    position: relative;
-    width: 100%;
     animation-name: example;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -16,11 +15,12 @@ body{
 .name{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 300px;
+    font-size: 18vw;
     text-align: center;
+    line-height: none;
     position: fixed;
-    left: 0px;
-    top: 100px;
+    left: 0vw;
+    top: 10vh;
     animation-name: fontexample;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -29,16 +29,15 @@ body{
 .line{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 85px;
+    font-size: 6vw;
     animation-name: fontex;
     animation-duration: 30s;
     animation-iteration-count: infinite;
 }
 
 .empty{
-    padding: 50px;
-    width: 400px;
-    height: 300px; 
+    width: 4vw;
+    height: 40vh; 
 }
 
 @keyframes example {
@@ -83,14 +82,13 @@ body{
   100% {color: #F28123; font-family: Arial, Helvetica, sans-serif;}
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
     .name{
-    font-size: 180px;
-    line-height: 4.5;
-}
+        line-height: 4.5;
+    }
 
-.empty{
-    height: 750px; 
+    .empty{
+    height: 50vh; 
 }
 }
 
@@ -107,7 +105,8 @@ body{
 
 
 <div class="name">
-        NEIL DONNELLY
+        NEIL
+        DONNELLY
 </div>
 
 
