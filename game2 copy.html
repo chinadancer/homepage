@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> the last word </title>
+<style>
+
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+}
+
+.button{
+    position: absolute;
+    right: 5%;
+    top: 850px;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .name{
+      font-size: 30px;
+  }
+
+  .button{
+      bottom: 50px;
+  }
+
+  a{
+      font-size: 30px;
+  }
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  
+  $(".button").click(function(event){
+      var targetLink = $(this).attr("href")
+      event.preventDefault()
+      console.log("hello?", targetLink)
+    // $("body").css({opacity : "0"})
+    $("body").animate({
+        opacity : 0
+    }, 600, function(){
+        window.location = targetLink;
+    })
+    // setTimeout(function(){
+    //     window.location = targetLink;
+    // },500)
+
+    // $("html").fadeOut(4000)
+  });
+});
+
+</script>
+
+</head>
+<body>
+<div class="name"> the last word </div>
+
+
+    <a href="game2hp.html" class="button animsition-link"> start  </a> 
+
+</body>
+</html>

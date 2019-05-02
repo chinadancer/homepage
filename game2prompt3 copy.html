@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> the last word </title>
+<style>
+
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white; 
+    position: relative;
+    overflow: hidden;
+}
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+    font-size: 25px;
+    z-index: 100;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.prompt1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+    font-size: 25px;
+    z-index: 100;
+    position: absolute;
+    left: 10%;
+    top: 50px;
+}
+
+#ex1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: blue;
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex1 ;
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+}
+
+@keyframes ex1{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    color: orange;
+    position: absolute;
+    left: 200px;
+    bottom: 75px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex2 ;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: .6s;
+}
+
+@keyframes ex2{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: red;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex3 ;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: .8s;
+}
+
+@keyframes ex3{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color: greenyellow;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex4 ;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes ex4{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    color: purple;
+    position: absolute;
+    bottom: 30px;
+    right: 300px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex5 ;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.2s;
+}
+
+@keyframes ex5{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex6{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: deeppink;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex6 ;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.4s;
+}
+
+@keyframes ex6{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex7{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px ;
+    color: black;
+    position: absolute;
+    top: 300px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex7 ;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.6s;
+}
+
+@keyframes ex7{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex8{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 45px;
+    color: gray;
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex8 ;
+    animation-delay: 1.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.8s;
+}
+
+@keyframes ex8{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex9{
+    font-family: fantasy;
+    font-size: 20px;
+    color: lightblue;
+    position: absolute;
+    right: 400px;
+    top: 200px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex9 ;
+    animation-delay: 1.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes ex9{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex10{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    color: green;
+    position: absolute;
+    bottom: 200px;
+    right: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.2s;
+}
+
+@keyframes ex10{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex11{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: blue;
+    z-index: -1;
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex11 ;
+    animation-delay: 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.4s;
+}
+
+@keyframes ex11{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex12{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: orangered;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex12 ;
+    animation-delay: 2.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.6s;
+}
+
+@keyframes ex12{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex13{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 72px;
+    color: darkred;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex13 ;
+    animation-delay: 2.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.8s;
+}
+
+@keyframes ex13{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex14{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: indigo;
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex14 ;
+    animation-delay: 2.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes ex14{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex15{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: yellow;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex15 ;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.2s;
+}
+
+@keyframes ex15{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex16{
+    font-family: fantasy;
+    font-size: 50px;
+    color: green;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex16 ;
+    animation-delay: 3.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.4s;
+}
+
+@keyframes ex16{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex17{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: orange;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex17 ;
+    animation-delay: 3.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.6s;
+}
+
+@keyframes ex17{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex18{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    color: black;
+    position: absolute;
+    bottom: 300px;
+    right: 600px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex18 ;
+    animation-delay: 3.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.8s;
+}
+
+@keyframes ex18{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex19{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    bottom: 75px;
+    left: 300px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex19 ;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4.2s;
+}
+
+@keyframes ex19{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex20{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: gold;
+    position: absolute;
+    right: 500px;
+    top: 450px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex20 ;
+    animation-delay: 4.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4.4s;
+}
+
+@keyframes ex20{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#inp::placeholder {
+  color: black;
+}
+
+.inp {
+  position: relative;
+  top: 500px;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  max-width: 280px;
+}
+.inp .border {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 1000px;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 250px;
+  font-size: 30px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+
+/* .inp .label{
+    color: white;
+} */
+
+
+.button-wrapper{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.dropbtn {
+    position: relative;
+    display: inline-block;
+  background-color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; 
+}
+
+@media screen and (max-width: 600px) {
+  
+  .prompt1{
+      font-size: 19px;
+      left: 25%;
+      z-index: 100;
+  }
+
+  .inp input{
+      width: 400px;
+  }
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+$(document).ready(function(){
+  
+  $(".button").click(function(event){
+      var targetLink = $(this).attr("href")
+      event.preventDefault()
+      console.log("hello?", targetLink)
+    $("body").animate({
+        opacity : 0
+    }, 600, function(){
+        window.location = targetLink;
+    })
+
+  });
+
+  $(".inp").hide();
+  $('.dropdown').hide();
+
+  $(".page").click(function(){
+      $(".inp").show();
+      $(".dropdown").show();
+      $(".arrow").css("opacity","0");
+      //$(".textbox").append("<input type='text' name='userinput'>")
+    //   console.log("working?")
+  });
+
+        // var keycode = (event.keyCode ? event.keyCode : event.which);
+
+
+        // $( ".results" ).keypress(function( ) {
+        //   if ( keycode == 13 ) {
+        //  console.log("working");
+        //   }
+        // });
+
+  $("#drop5").click(function(){
+      $(".dropdown").hide();
+      $('.inp').show();
+      $('.arrow').css("opacity","1");
+
+      //when you click done convert to div
+      $(".inp").replaceWith(function(){
+          return $('<div class="userText">' + $("#inp").val() + "</div>");
+      })
+    $(".userText").draggable();
+    });
+
+    var counter = 0;
+    var counterFont = 0;
+    var counterSize = 0;
+
+ var ColorArray =[
+        "blue","red","yellow","green", "purple", "orange", "black", "grey", "lightblue",
+        "lightsalmon", "gold","darkred","greenyellow", "deeppink",
+        "orangered", "darkblue","darkpurple", "darkgrey"];
+
+    var FontArray = [ "Helvetica","Times New Roman","Arial","Courier New","Times","Verdana",
+                        "Georgia", "Comic Sans MS", "Trebuchet MS", "Garamond","Palatino",
+                        "Arial Black", "Impact", "Courier", "Gill Sans", "Franklin Gothic Medium",
+                        "Lucida Sans", "Calibri","fantasy"];
+
+    var SizeArray = [ "12px","14px", "18px", "24px","30px","36px","48px","55px","60px","72px","85px","92px","100px"];
+    
+    $(".colors").click(function(){
+        $("#inp").css("color",ColorArray[counter]);
+        $(".colors").css("color",ColorArray[counter]);
+        $(".results").css("color",ColorArray[counter]);
+        counter++;
+        if(counter == ColorArray.length){
+            counter = 0;
+        }
+    })
+
+    $(".fonts").click(function(){
+        $("#inp").css("font-family",FontArray[counterFont]);
+        $(".fonts").css("font-family",FontArray[counterFont]);
+        $(".results").css("font-family",FontArray[counterFont]);
+        counterFont++;
+        if(counterFont == FontArray.length){
+            counterFont = 0;
+        }
+        console.log("working?")
+    })
+
+    $(".size").click(function(){
+        $("#inp").css("font-size",SizeArray[counterSize]);
+        $(".results").css("font-size",SizeArray[counterSize]);
+        counterSize++;
+        if(counterSize == SizeArray.length){
+            counterSize = 0;
+        }
+    })
+
+});
+
+</script>
+
+</head>
+<body id="body">
+
+<div class="arrow">
+
+    <a href="game2hp.html" class="button animsition-link"> back </a> 
+        
+    <div class="prompt1"> 
+    what is the one thing you wish people understood? </div>
+
+    <div class="livetext" id="ex1"> being kind is almost always super easy  </div>
+
+    <div class="livetext" id="ex2"> Literally stop being an asshole to people, 
+                                    we are all on the same playing field. 
+                                    Stoop being mean for no reason just. </div>
+    
+    <div class="livetext" id="ex3"> How contaminated this world is </div>
+    
+    <div class="livetext" id="ex4"> That climate change needs to be helped </div>
+    
+    <div class="livetext" id="ex5"> You don’t have to be sad ALL the time to be depressed** </div>
+    
+    <div class="livetext" id="ex6"> I’m High-key the happy friend that’s uplifts everyone else but I be going thru it </div>
+    
+    <div class="livetext" id="ex7"> That no one gives a fuck. 
+                                    Live your life for yourself and everyone 
+                                    who doesn’t support you can piss off. </div>
+    
+    <div class="livetext" id="ex8"> Opinions  </div>
+    
+    <div class="livetext" id="ex9"> Time means different things in different regions </div>
+    
+    <div class="livetext" id="ex10"> That I’m not a “hoe” like everyone thinks I am bc I’m outgoing and have guy friends? </div>
+    
+    <div class="livetext" id="ex11"> That the earth is dying and we need to SAVE IT </div>
+    
+    <div class="livetext" id="ex12"> That not everyone’s life and their ups and downs are the same as everyone else’s  </div>
+    
+    <div class="livetext" id="ex13"> True happiness </div>
+    
+    <div class="livetext" id="ex14"> That we can disagree and still love one another, 
+                                     That I will love them with potency that does not 
+                                     fade and their existence brings be joy, That when 
+                                     you choose too love people regardless of who they 
+                                     are the world bothers you less and you will find 
+                                     yourself more tolerant and empathetic, The world 
+                                     has NO blacks and whites and it is all grey, the 
+                                     moment you can’t see the opinions of the other 
+                                     side you yourself are most likely wrong </div>
+    
+    <div class="livetext" id="ex15"> I wish people understood that you can’t be happy 100% of the time </div>
+    
+    <div class="livetext" id="ex16"> That it’s not always black and white </div>
+    
+    <div class="livetext" id="ex17"> Everything I go through lol </div>
+    
+    <div class="livetext" id="ex18"> That school is shit </div>
+    
+    <div class="livetext" id="ex19"> That they don’t need to buy new things </div>
+    
+    <div class="livetext" id="ex20"> accepting different body types/sizes </div>
+
+</div>
+
+<div class="results">
+<label for="inp" class="inp">
+        <input type="text" placeholder="type here" id="inp" placeholder="&nbsp;">
+        <!-- <span class="label"> type here </span> -->
+        <!-- <span class="border"></span> -->
+</label>
+</div>
+
+<div class="dropdown">
+        <div class="button-wrapper">
+            <button class="dropbtn colors" id="drop"> colors </button>
+            <div class="dropdown-content">test</div>        
+        </div
+        ><div class="button-wrapper">
+            <button class="dropbtn fonts" id="drop3"> fonts </button>
+            <div class="dropdown-content"></div>
+        </div
+        ><div class="button-wrapper">
+            <button class="dropbtn size" id="drop4"> size </button>
+            <div class="dropdown-content"></div>
+        </div
+        ><div class="button-wrapper">
+            <button class="dropbtn" id="drop5"> done </button>
+            <div class="dropdown-content"></div>
+        </div>
+        
+</div>
+
+<div class="page"> </div>
+
+
+</body>
+</html>

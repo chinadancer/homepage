@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> the last word </title>
+<style>
+
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white; 
+    position: relative;
+    overflow: hidden;
+}
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+    font-size: 25px;
+    z-index: 100;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.prompt1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+    font-size: 25px; 
+    z-index: 100;
+    position: absolute;
+    left: 10%;
+    top: 50px;
+}
+
+#ex1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: lightsalmon;
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex1 ;
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+}
+
+@keyframes ex1{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex2{
+    font-family: fantasy;
+    font-size: 18px;
+    color: purple;
+    position: absolute;
+    top: 550px;
+    left: 350px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex2 ;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: .6s;
+}
+
+@keyframes ex2{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 72px;
+    color: yellow;
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex3 ;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: .8s;
+}
+
+@keyframes ex3{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: blue;
+    position: absolute;
+    top: 550px;
+    right: 250px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex4 ;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes ex4{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    color:red;
+    position: absolute;
+    top: 50px;
+    right: 250px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex5 ;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.2s;
+}
+
+@keyframes ex5{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex6{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    color:green;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex6 ;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.4s;
+}
+
+@keyframes ex6{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex7{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: darkred;
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex7 ;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.6s;
+}
+
+@keyframes ex7{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex8{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: orange;
+    position: absolute;
+    top: 325px;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex8 ;
+    animation-delay: 1.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.8s;
+}
+
+@keyframes ex8{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex9{
+    font-family: Cambria;
+    font-size: 45px;
+    color: lightblue;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex9 ;
+    animation-delay: 1.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes ex9{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex10{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 650px;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.2s;
+}
+
+@keyframes ex10{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex11{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #FF4500;
+    position: absolute;
+    top: 450px;
+    left: 450px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.4s;
+}
+
+@keyframes ex11{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex12{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 2.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.6s;
+}
+
+@keyframes ex12{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex13{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: purple;
+    position: absolute;
+    top: 750px;
+    left: 350px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 2.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.8s;
+}
+
+@keyframes ex13{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex14{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    color: blue;
+    position: absolute;
+    top: 350px;
+    left: 450px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 2.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes ex14{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex15{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: darkgreen;
+    position: absolute;
+    top: 600px;
+    left: 50px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.2s;
+}
+
+@keyframes ex15{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex16{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: gray;
+    position: absolute;
+    top: 850px;
+    left: 350px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 3.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.4s;
+}
+
+@keyframes ex16{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex17{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: indigo;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 3.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.6s;
+}
+
+@keyframes ex17{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex18{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: deeppink;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 3.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 3.8s;
+}
+
+@keyframes ex18{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex19{
+    font-family: fantasy;
+    font-size: 14px;
+    color: teal;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4.2s;
+}
+
+@keyframes ex19{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#ex20{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 50px;
+    right: 500px;
+    pointer-events: none;
+    opacity: 0;
+    animation-name: ex10 ;
+    animation-delay: 4.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4.4s;
+}
+
+@keyframes ex20{
+    0% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#inp::placeholder {
+  color: black;
+}
+
+.inp {
+  position: relative;
+  top: 500px;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  max-width: 280px;
+}
+.inp .border {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 1000px;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 250px;
+  font-size: 30px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+
+/* .inp .label{
+    color: white;
+} */
+
+
+.button-wrapper{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.dropbtn {
+    position: relative;
+    display: inline-block;
+  background-color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; 
+}
+
+@media screen and (max-width: 600px) {
+  
+  .prompt1{
+      font-size: 20px;
+      left: 25%;
+      z-index: 100;
+  }
+
+  .inp input{
+      width: 400px;
+  }
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+$(document).ready(function(){
+  
+  $(".button").click(function(event){
+      var targetLink = $(this).attr("href")
+      event.preventDefault()
+      console.log("hello?", targetLink)
+    $("body").animate({
+        opacity : 0
+    }, 600, function(){
+        window.location = targetLink;
+    })
+
+  });
+
+  $(".inp").hide();
+  $('.dropdown').hide();
+
+  $(".page").click(function(){
+      $(".inp").show();
+      $(".dropdown").show();
+      $(".arrow").css("opacity","0");
+      //$(".textbox").append("<input type='text' name='userinput'>")
+    //   console.log("working?")
+  });
+
+        // var keycode = (event.keyCode ? event.keyCode : event.which);
+
+
+        // $( ".results" ).keypress(function( ) {
+        //   if ( keycode == 13 ) {
+        //  console.log("working");
+        //   }
+        // });
+
+  $("#drop5").click(function(){
+      $(".dropdown").hide();
+      $('.inp').show();
+      $('.arrow').css("opacity","1");
+
+      //when you click done convert to div
+      $(".inp").replaceWith(function(){
+          return $('<div class="userText">' + $("#inp").val() + "</div>");
+      })
+    $(".userText").draggable();
+    });
+
+    var counter = 0;
+    var counterFont = 0;
+    var counterSize = 0;
+
+     var ColorArray =[
+        "blue","red","yellow","green", "purple", "orange", "black", "grey", "lightblue",
+        "lightsalmon", "gold","darkred","greenyellow", "deeppink",
+        "orangered", "darkblue","darkpurple", "darkgrey"];
+
+    var FontArray = [ "Helvetica","Times New Roman","Arial","Courier New","Times","Verdana",
+                        "Georgia", "Comic Sans MS", "Trebuchet MS", "Garamond","Palatino",
+                        "Arial Black", "Impact", "Courier", "Gill Sans", "Franklin Gothic Medium",
+                        "Lucida Sans", "Calibri","fantasy"];
+
+    var SizeArray = [ "12px","14px", "18px", "24px","30px","36px","48px","55px","60px","72px","85px","92px","100px"];
+
+    $(".colors").click(function(){
+        $("#inp").css("color",ColorArray[counter]);
+        $(".colors").css("color",ColorArray[counter]);
+        $(".results").css("color",ColorArray[counter]);
+        counter++;
+        if(counter == ColorArray.length){
+            counter = 0;
+        }
+    })
+
+    $(".fonts").click(function(){
+        $("#inp").css("font-family",FontArray[counterFont]);
+        $(".fonts").css("font-family",FontArray[counterFont]);
+        $(".results").css("font-family",FontArray[counterFont]);
+        counterFont++;
+        if(counterFont == FontArray.length){
+            counterFont = 0;
+        }
+        console.log("working?")
+    })
+
+    $(".size").click(function(){
+        $("#inp").css("font-size",SizeArray[counterSize]);
+        $(".results").css("font-size",SizeArray[counterSize]);
+        counterSize++;
+        if(counterSize == SizeArray.length){
+            counterSize = 0;
+        }
+    })
+
+});
+
+</script>
+
+</head>
+<body id="body">
+
+<div class="arrow">
+
+    <a href="game2hp.html" class="button animsition-link"> back </a> 
+        
+    <div class="prompt1"> 
+    what do you think when you hear “body”.  </div>
+
+    <div class="livetext" id="ex1"> “I’m fat” or “I wish I had abs” </div>
+
+    <div class="livetext" id="ex2">  Borana Ramizi saying “yass giving my booooty” </div>
+    
+    <div class="livetext" id="ex3"> Health class  </div>
+    
+    <div class="livetext" id="ex4"> Positivity </div>
+    
+    <div class="livetext" id="ex5"> Human </div>
+    
+    <div class="livetext" id="ex6"> A curvy figure…? Idk lol </div>
+    
+    <div class="livetext" id="ex7"> What I can do but won’t to make mine better </div>
+    
+    <div class="livetext" id="ex8"> Dysmorphia  </div>
+    
+    <div class="livetext" id="ex9"> Bad bitch </div>
+    
+    <div class="livetext" id="ex10"> That Leonardo da Vinci picture the man with arms out </div>
+    
+    <div class="livetext" id="ex11"> insecurities  </div>
+    
+    <div class="livetext" id="ex12"> how chunky my body is </div>
+    
+    <div class="livetext" id="ex13"> sex </div>
+    
+    <div class="livetext" id="ex14"> A garden - a whole part comprised of many details. </div>
+    
+    <div class="livetext" id="ex15"> Kylie jenner </div>
+    
+    <div class="livetext" id="ex16"> Insta pics of girls in bathing suits </div>
+    
+    <div class="livetext" id="ex17"> My greatest asset </div>
+    
+    <div class="livetext" id="ex18"> Skeleton and organs </div>
+    
+    <div class="livetext" id="ex19"> Gym  </div>
+    
+    <div class="livetext" id="ex20"> My body </div>
+
+</div>
+
+<div class="results">
+<label for="inp" class="inp">
+        <input type="text" placeholder="type here" id="inp" placeholder="&nbsp;">
+        <!-- <span class="label"> type here </span> -->
+        <!-- <span class="border"></span> -->
+</label>
+</div>
+
+<div class="dropdown">
+        <div class="button-wrapper">
+            <button class="dropbtn colors" id="drop"> colors </button>
+            <div class="dropdown-content">test</div>        
+        </div
+        ><div class="button-wrapper">
+            <button class="dropbtn fonts" id="drop3"> fonts </button>
+            <div class="dropdown-content"></div>
+        </div
+        ><div class="button-wrapper">
+            <button class="dropbtn size" id="drop4"> size </button>
+            <div class="dropdown-content"></div>
+        </div
+        ><div class="button-wrapper">
+            <button class="dropbtn" id="drop5"> done </button>
+            <div class="dropdown-content"></div>
+        </div>
+        
+</div>
+
+<div class="page"> </div>
+
+
+</body>
+</html>
