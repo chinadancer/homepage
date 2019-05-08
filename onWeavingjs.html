@@ -10,35 +10,42 @@
 
    #print1{
      position: absolute;
-     top: 100px;
-     left: 300px;
+     top: 75px;
+     left: 550px;
    }
 
    #print2{
      position: absolute;
-     top: 100px;
-     left: 300px;
+     top: 75px;
+     left: 550px;
    }
+
 
  </style>
 
-  <script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 
-// function Print(){
-//   document.getElementById("print2").innerHTML= "weaving2.png"; 
-// }
+$(document).ready(function(){
 
+$("#print2").hide();
+
+$("#print1").click(function(){
+    $("#print2").show();
+})
+
+})
   </script>
 
 </head>
 <body>
 
-<div id="print1" onclick="Print()">
-  <img src="weaving/weaving.png" style="width: 300px; height: 600px;">
+<div id="print1">
+  <img src="weaving/weaving.png" style="width: 600px; height: 800px;">
 </div>
 
 <div id="print2">
-    <img src="weaving/weaving2.png" style="width: 300px; height: 600px;">
+    <img src="weaving/weaving2.png" style="width: 600px; height: 800px;">
 </div>
 
 
