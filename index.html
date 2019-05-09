@@ -1,170 +1,229 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
-<link rel="stylesheet" href="indexhpL.css">
+<title> 2nd Year Homepage </title>
+<style>
+
+    .color{
+        width: 865px;
+        height: 938px;
+        background-color: peachpuff;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .color2{
+        width: 815px;
+        height: 938px;
+        background-color: black;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .color3{
+        width: 815px;
+        height: 938px;
+        background-color: peachpuff;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+   .color4{
+        width: 865px;
+        height: 938px;
+        background-color: black;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+  .devin{
+      position: absolute;
+      top: 50px;
+      right: 515px;
+      animation-name: dev;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+  }
+  @keyframes dev{
+      0% {top: 50px;}
+      25% {top: 65px;}
+      50% {top: 50px;}
+      75% {top: 65px;}
+      100% {top: 50px;}
+  }
+
+   .lukas{
+      position: absolute;
+      top: 60px;
+      left: 515px;
+      animation-name: luk;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+  }
+
+   @keyframes luk{
+      0% {top: 60px;}
+      25% {top: 45px;}
+      50% {top: 60px;}
+      75% {top: 45px;}
+      100% {top: 60px;}
+  }
+
+  .studio{
+      font-family:  Helvetica;
+      font-size: 100px;
+      color: black;
+      position: absolute;
+      right: 150px;
+      top: 100px;
+      display: none;
+  }
+
+  .lab{
+      font-family: arial;
+      font-size: 100px;
+      color: gold;
+      position: absolute;
+      left: 200px;
+      top: 100px;
+      display: none;
+  }
+
+  .devin:hover + .studio{
+      display: block !important;
+  }
+
+  .lukas:hover + .lab{
+      display: block !important;
+  }
+
+  .show{
+      display: block;
+  }
+
+  .studio2{
+    color: black;
+      font-family: Helvetica;
+      font-size: 50px;
+      text-align: right;
+      position: absolute;
+      top: 100px;
+      left: 300px;
+  }
+
+  .studio2 a{
+      text-decoration: none;
+      color: black;
+      font-family: arial;
+      font-size: 50px;
+  }
+
+  .devin2{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    }
+
+    .lukas2{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    }
+
+  .lab2{
+      color: gold;
+      font-family: arial;
+      font-size: 50px;
+      position: absolute;
+      top: 100px;
+      right: 300px;
+  }
+
+  .lab2 a{
+      text-decoration: none;
+      color: gold;
+      font-family: arial;
+      font-size: 50px;
+  }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".color3").hide();
+        $(".color4").hide();
+        $(".lab2").hide();
+
+        $(".devin").click(function(){
+            $(".lukas").toggle();
+            // $(".lab").toggle();
+            $(".color2").toggle();
+            $(".color3").toggle();
+        })
+
+        $(".lukas").click(function(){
+            $(".devin").toggle(); // hide
+            $(".studio").toggle(); // onclick should hide
+            $(".color").toggle(); // hide
+            $(".color4").toggle(); // reveal
+            $(".lab2").toggle();
+            // $(".color4").toggleClass("show"); // reveal
+        })
+        // rather than toggle, we can use toggleclass
+
+    })
+</script>
+
 </head>
 <body>
 
-
-<div class="studio">
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
+<div class="color"></div>
+<div class="devin">
+    <img src="devin.png" style="width: 350px; height: 850px;">
 </div>
+<div class="studio"> STUDIO </div>
+<div class="color3"></div>
+<div class="studio2">
+    Projects 
+    <br>
+    ________________
+    <ul class="devin2">
+            <li> <a href="p1index.html"> Dialogue </a> </li>
+            <li> <a href="collection2.html"> Collection </a> </li>
+            <li> <a href="poster.html"> CD Lecture Poster </a> </li>
+            <li> <a href="game2.html"> Game Final </a> </li>
+    </ul>
 
-<div class="lab">
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>     
 </div>
 
-<div class="peers">
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
+<div class="color2"></div>
+<div class="lukas">
+    <img src="lukas.png" style="width: 300px; height: 800px;">
 </div>
-
-<div class="studiop2">
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-</div>
-        
-<div class="labp2">
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>     
-</div>
-        
-<div class="peersp2">
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-</div>
-
-<div class="studiop3">
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-</div>
-                
-<div class="labp3">
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>
-<div class="lab1"> <a href="lab.html"> LAB </a></div>     
-</div>
-                
-<div class="peersp3">
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-<div class="peers1"> <a href="peers.html"> PEERS </a></div>
-</div>
-
-<div class="studiop4">
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
-<div class="studio1"> <a href="studio.html"> STUDIO </a></div>
+<div class="lab"> LAB </div>
+<div class="color4"></div>
+<div class="lab2">
+        Projects 
+        <br>
+        ________________
+        <ul class="lukas2">
+                <li> <a href="indexlab.html"> html Page</a>  </li>
+                <li> <a href="type.html"> positioning exercise</a> </li>
+                <li> <a href="media.html"> @ media-queries</a> </li>
+                <li> <a href="animate.html"> animation exercise </a></li>
+                <li> <a href="onWeavingjs.html"> javascript </a></li>
+                <li> javascript 2 </li>
+                <li> arrays </li>
+                <li> jquery </li>
+                <li> jquery 2 </li>
+        </ul>
 </div>
 
 </body>
