@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Allergies? </title>
+<style>
+
+body{
+    background-color: goldenrod;
+}
+
+ #imageButton{
+        display: inline-block;
+        background-color: black;
+        font-family: Verdana;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        position: fixed;
+        top: 10%;
+        right: 45%;
+    }
+
+    #flow1{
+      position: absolute;
+      top: 200px;
+      left: 50px;
+    }
+
+    #flow2{
+      position: absolute;
+      top: 400px;
+      right: 50px;
+    }
+
+    #flow3{
+      position: absolute;
+      top: 200px;
+      left: 700px;
+    }
+
+    #flow4{
+      position: absolute;
+      top: 50px;
+      right: 100px;
+    }
+
+    #flow5{
+      position: absolute;
+      top: 575px;
+      left: 250px;
+    }
+
+    #flow6{
+      position: absolute;
+      top: 0px;
+      left: 300px;
+    }
+
+    #text{
+        font-family: Verdana;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        position: fixed;
+        top: 55%;
+        right: 60%;
+    }
+
+     #imageButton2{
+        display: inline-block;
+        background-color: black;
+        font-family: Verdana;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        position: fixed;
+        top: 90%;
+        right: 10%;
+
+        animation-name: stretch;
+        animation-duration: 1.5s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+
+
+        @keyframes stretch {
+        0% {
+          transform: scale(.7);
+          
+        }
+        50% {
+          transform: scale (.9)
+        }
+        100% {
+          transform: scale(1.3);
+          
+        }
+        }
+
+        #text2{
+        font-family: Verdana;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        position: fixed;
+        top: 200px;
+        right: 40%;
+    }
+
+      #poll1{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+      }
+
+      #poll2{
+        position: absolute;
+        top: 300px;
+        left: 600px;
+      }
+
+      #poll3{
+        position: absolute;
+        top: 300px;
+        right: 100px;
+      }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+    $("#flow1").hide();
+    $("#flow2").hide();
+    $("#flow3").hide();
+    $("#flow4").hide();
+    $("#flow5").hide();
+    $("#flow6").hide();
+    $("#text").hide();
+    $("#text2").hide();
+    $("#poll1").hide();
+    $("#poll2").hide();
+    $("#poll3").hide();
+    $("#imageButton2").hide();
+
+    $("#imageButton").click(function(){
+      $("#flow1").fadeIn(500);
+      $("#flow2").fadeIn(1000);
+      $("#flow3").fadeIn(2000);
+      $("#flow4").fadeIn(3000);
+      $("#flow5").fadeIn(4000);
+      $("#flow6").fadeIn(5000);
+      $("#text").fadeIn(7000);
+      $("#imageButton2").fadeIn(12000);
+
+      $("#imageButton").hide();
+    
+    })
+
+    $("#imageButton2").click(function(){
+      
+      $("#text2").show();
+      $("#poll1").show();
+      $("#poll2").show();
+      $("#poll3").show();
+
+      $("#flow1").hide();
+      $("#flow2").hide();
+      $("#flow3").hide();
+      $("#flow4").hide();
+      $("#flow5").hide();
+      $("#flow6").hide();
+      $("#text").hide();
+      $("#imageButton2").hide();
+      $("#imageButton").hide();
+    })
+
+
+})
+</script>
+
+</head>
+<body>
+    <div id="imageButton"> click to start spring </div>
+
+    <div id="flow1"> <img src="flower1.jpg"> </div>
+    <div id="flow2"> <img src="flower2.gif"> </div>
+    <div id="flow3"> <img src="flower3.gif"> </div>
+    <div id="flow4"> <img src="flower4.gif"> </div>
+    <div id="flow5"> <img src="flower5.gif"> </div>
+    <div id="flow6"> <img src="flower6.gif"> </div>
+
+    <div id="text"> spring is cool or whatever but ...</div>
+    <div id="imageButton2">  oof click me !! </div>
+    <div id="text2"> pollen is the devil </div>
+
+    <div id="poll1"> <img src="pollen1.gif"> </div>
+    <div id="poll2"> <img src="allergy2.gif"> </div>
+    <div id="poll3"> <img src="allery3.gif"> </div>
+
+    
+</body>
+</html>
