@@ -1,0 +1,179 @@
+body {
+    background-color: burlywood; 
+  }
+
+#piece1{
+    position: fixed;
+    top: 776px; 
+    left: 595px;
+    cursor: move;
+    z-index: 10;
+}
+
+#piece2{
+    position: fixed;
+    top: 606px; 
+    left: 595px;
+    cursor: move;
+    z-index: 10;
+}
+
+#piece3{
+    position: fixed;
+    top: 500px; 
+    left: 595px;
+    cursor: move;
+    z-index: 10;
+}
+
+#piece4{
+    position: fixed;
+    top: 776px; 
+    left: 595px;
+    cursor: move;
+    z-index: 10;
+}
+
+#piece5{
+    position: fixed;
+    top: 776px; 
+    left: 595px;
+    cursor: move;
+    z-index: 10;
+}
+
+#piece6{
+    position: fixed;
+    top:45px;
+    left: 15%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece7{
+    position: fixed;
+    top:200px;
+    left: 2%;
+      cursor: move;
+      z-index: 10;
+}
+ 
+#piece8{
+    position: fixed;
+    top:200px;
+    left: 38%;
+      cursor: move;
+      z-index: 10;
+}
+  
+#piece9{
+    position: fixed;
+    top:430px;
+    left: 70%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece10{ 
+    position: fixed;
+    top:460px;
+    left: 2%;
+      cursor: move;
+      z-index: 10;
+}
+ 
+#piece11{
+    position: fixed;
+    top:15px;
+    left: 84%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece12{
+    position: fixed;
+    top:600px;
+    left: 94%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece13{
+    position: fixed;
+    top:550px;
+    left: 38%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece14{
+    position: fixed;
+    top:2px;
+    left: 1%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece15{
+    position: fixed;
+    top:100px;
+    left: 80%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece16{
+    position: fixed;
+    top:10px;
+    left: 34%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece17{
+    position: fixed;
+    top:320px;
+    left: 43%;
+      cursor: move;
+      z-index: 10;
+}
+
+  #piece18{
+    position: fixed;
+    top:150px;
+    left: 64%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece19{
+    position: fixed;
+    top:480px;
+    left: 25%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece20{
+    position: fixed;
+    top:280px;
+    left: 85%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece21{
+    position: fixed;
+    top:220px;
+    left: 22%;
+      cursor: move;
+      z-index: 10;
+}
+
+#piece22{
+    position: fixed;
+    top:-45px;
+    left: 55%;
+      cursor: move;
+      z-index: 10;
+}
